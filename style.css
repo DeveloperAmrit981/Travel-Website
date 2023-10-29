@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(45deg, #0c0c0c, #0f971c);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1;
+}
+
+.logo{
+    padding: 5px;
+}
+
+.logospan {
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: bolder;
+    background: linear-gradient(45deg, #8e4943, #e8a31b);
+     background: linear-gradient(45deg, #8e4943, #e8a31b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+    text-shadow: 2px 2px 8px rgb(187, 60, 60);
+}
+
+.nav-items{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-items a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-items a:hover{
+    color: antiquewhite;
+}
+
+.search {
+    display: flex;
+}
+
+.search input{
+    height: 40px;
+    padding: 0rem 2rem;
+    border-radius: 20px 0px 0px 20px;
+    border: none;
+}
+
+.search button{
+    font-size: 1rem;
+    height: 40px;
+    padding: 0rem 1rem;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #ffb405;
+    cursor: pointer;
+}
+
+.search button:hover{
+    scale: 1.2;
+    border-radius: 25%;
+}
+
+
+.btnTop{
+    padding: 0.9rem 3rem;
+    font-size: 1rem;
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: bolder;
+    color: #FFFFFF;
+    border-radius: 20px 20px 20px 0px;
+    background: linear-gradient(to top right, #f7ba2c, #ea5459);
+    transition: all ease 1s;
+    border: none;
+}
+
+.btnTop:hover{
+    border-radius: 20px;
+}
+
+/*main section*/
+main{
+    height: 100%;
+    width: 100%; 
+}
+
+#topPage {
+    height: 100%;
+    width: 100vw;
+    
+}
+
+.pageVideo{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.overlay {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    padding: 150px 300px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    position: relative;
+    
+}
+
+
+
+.overlay h1{
+    font-size: 4rem;
+    position: relative;
+}
+
+.overlay h1::before{
+    content: "Travel The world";
+    position: absolute;
+    color: #000;
+    top: -0.4rem;
+    left: -0.4rem;
+    z-index: -1;
+}
+
+.overlay h2{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color:rgba(255, 255, 255, 0.7)
+}
+
+.overlay p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: beige;
+    margin-bottom: 2rem;
+}
+
+/*page 2*/
+.page2 {
+    height: 70vh;
+    width: 100vw;
+    margin-top: 6rem;
+    overflow: hidden;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.page2 img{
+    width: 50%;
+    border-radius: 25px 0px 25px 25px;
+}
+
+.page2side {
+    padding: 5rem;
+    color: white;
+}
+
+.page2side h2{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.page2side p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 2rem 0;
+    line-height: 2rem;
+    color: rgba(255, 255, 200, 0.8);
+}
+
+.img1btn {
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background: linear-gradient(to top right, #32d1e0, #0aa1d8);
+    border-radius: 20px 0px 20px 20px;
+    border: none;
+    color: gold;
+    
+}
+
+.img1btn:hover{
+    background: linear-gradient(45deg, #0c0c0c, #0f971c);
+    color: #FFFFFF;
+    transition: all ease 1s;
+}
+
+/*page3*/
+.page3{
+    height: 40vh;
+    width: 100%;
+    padding: 2rem 4rem;
+    color: #FFFFFF;
+    background:linear-gradient(45deg, #0c0c0c, #0f971c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3content {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 4rem 0rem 1rem 0rem;
+    text-align: center;
+}
+
+.page3 small {
+    width: 100%;
+    text-align: end;
+    padding-right: 5rem;
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+
+/* cards */
+.cards {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem;
+    position: relative;
+}
+
+.card {
+    height: 90%;
+    width: 25%;
+    background-color: rgba(202, 189, 189, 0.3);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.card img{
+    aspect-ratio: 16/9;
+}
+
+.card h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card p{
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+}
+
+.card a{
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: rgb(15, 208, 251);
+    text-align: end;
+}
+
+.card1{
+    border-radius: 30px 0px 30px 30px;
+}
+
+.card2{
+    border-radius: 30px 0px 30px 0px;
+}
+
+.card3 {
+    border-radius: 0px 30px 30px 30px;
+}
+
+.reviewSection{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, hsl(0, 0%, 0%), #f5deb3);
+    padding: 2rem 1rem 2rem 1rem;
+}
+.reviewSection h2{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #ffb405;
+}
+
+.reviewSection  span{
+    background: linear-gradient(45deg, #f15d4f, #05faf2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+
+.reviewContainer {
+    height: 100%;
+    width: 100%;
+    padding: 2rem 3rem;
+    background-color: white;
+    display: flex;
+    gap: 2rem;
+    border-radius: 0px 50px 0px 50px ;
+}
+
+.review{
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.rating i{
+    font-size: 1rem;
+    color: gold;
+    padding-bottom: 1rem;
+}
+
+.review blockquote{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.reviewer {
+    text-align: end;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+/*deals*/
+.deals{
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.deals img {
+    aspect-ratio: 16/9;
+    width: 50vw;
+    border-radius: 25%;
+    
+}
+
+.dealstoday{
+    padding: 4rem;
+    
+}
+
+.dealstoday h1 {
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dealstoday p{
+    padding: 2rem 0 3rem 0;
+    font-size: 2rem;
+}
+
+.dealstoday h1,
+.dealstoday p {
+    background: linear-gradient(45deg, #8e4943, #e8a31b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.dealstoday button {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to top right, #f7ba2c, #ea5459);
+    border-radius: 20px 20px 20px 0;
+    border: none;
+}
+
+.dealstoday button:hover {
+    border-radius: 20px;
+    transition: all ease 1s;
+}
+
+/*Forms here*/
+form{
+    height: 100%;
+    width: 100vw;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f5deb3, #3ccd4a);
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, #0c0c0c, #0f971c);
+    padding: 3rem;
+    gap: 1rem;
+    width: 40%;
+    color: #ffb405;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.8);
+}
+
+.form-item {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item small {
+    text-align: end;
+    padding-right: 3rem;
+    font-size: 1rem;
+    color: rgb(252, 0, 0);
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-left: 2rem;
+}
+
+form input,select {
+    padding: 0.3rem;
+    padding-left: 1.4rem;
+    border-radius: 30px ;
+    height: 2.5rem;
+    border: none;
+    box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.8);
+}
+
+.form-item-radio {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.radioBtnHolder label{
+    padding-left: 0;
+}
+
+
+.gender{
+    display: flex;
+    gap: 1rem;
+}
+
+.radio {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.radio input {
+    padding: 0;
+    height: fit-content;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.checkbox label {
+    padding-left: 1rem;
+}
+
+.checkbox input {
+    height: 20px;
+    width: 20px;
+}
+
+.form-btns {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+
+.submitBtn, .resetBtn {
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.submitBtn {
+    background:linear-gradient(to right,#4ece52, #005103 ) ;
+}
+
+.resetBtn {
+    background:linear-gradient(to right,#f46e42, #ff0000 ) ;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    padding: 2rem 5rem;
+    gap: 1rem;
+    background:hsla(199, 17%, 22%, 0.7) ;
+}
+
+.footerSection h2{
+font-size: 1.5rem;
+text-transform: uppercase;
+padding-bottom: 1rem;
+color: rgb(249, 249, 130);
+}
+
+.footerSection p {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    color: #f7e9cd;
+}
+
+
+.icons .fa {
+    font-size: 1.5rem;
+    padding: rem 1rem;
+}
+
+.pageEnd {
+    padding: 0.5rem 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #2d2a2a;
+}
+
+.pageEnd p{
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
